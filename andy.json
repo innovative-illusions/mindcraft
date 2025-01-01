@@ -1,6 +1,13 @@
 {
-    "name": "andy",
-
-    "model": "gpt-4o-mini"
-
+    "name": "andy-qwen",
+    "model": {
+        "api": "openai",
+        "url": "http://localhost:4000/",
+        "model": "GLHF:qwen2.5-72b"
+    },
+    "embedding": {
+        "api": "ollama",
+        "url": "http://localhost:11434/",
+        "model": "nomic-embed-text"
+    }
 }
