@@ -14,7 +14,7 @@ export default
         // "./andy-creative.json",
         // "./custom_profiles/blue.json",
         // "./custom_profiles/red.json",
-        "./profiles/andy_npc.json",
+        "./profiles/andy_cot.json",
         // "./profiles/claude.json",
         // "./profiles/gemini.json",
         // "./profiles/llama.json",

@@ -24,56 +24,6 @@ export class GPT {
         const pack = {
             model: this.model_name || "gpt-4o",
             messages,
-            response_format: {
-                type: "json_schema",
-                json_schema: {
-                        name: "reasoning",
-                        schema: {
-                            type: "object",
-                            properties: {
-                                cot1: {
-                                    type: "string",
-                                    description: "Think step by step about what you will do next.",
-                                },
-                                cot2: {
-                                    "type": "string",
-                                    "description": "Determine the optimal approach.",
-                                },
-                                cot3: {
-                                    type: "string",
-                                    description: "Plan ahead.",
-                                },
-                                cot4: {
-                                    type: "string",
-                                    description: "Explain your reasoning behind this choice of action.",
-                                },
-                                cot5: {
-                                    "type": "string",
-                                    "description": "Plan ahead further.",
-                                },
-                                output: {
-                                    "type": "string",
-                                    "description": "This is the final response !withThisSyntax(params) commands are permitted IF THE SYSTEM ASKS FOR CODE OUTPUT ONLY CODE.",
-                                },
-                            },
-                            "required": [
-                                "cot1",
-                                "cot2",
-                                "cot3",
-                                "cot4",
-                                "cot5",
-                                "output",
-                            ],
-                            "additionalProperties": false,
-                        },
-                        "strict": true,
-                    },
-            },
-            temperature: 0.7,
-            top_p: 0.9,
-            frequency_penalty: 0.2,
-            presence_penalty: 0.5,
-            stop: stop_seq,
         };
         if (this.model_name.includes('o1')) {
             pack.messages = strictFormat(messages);
