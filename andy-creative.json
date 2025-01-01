@@ -1,0 +1,24 @@
+{
+    "name": "andy-creative",
+    "model": {
+        "api": "openai",
+        "url": "http://localhost:4000/",
+        "model": "GLHF:llama3.3"
+    },
+    "embedding": {
+        "api": "ollama",
+        "url": "http://localhost:11434/",
+        "model": "nomic-embed-text"
+    },
+    "modes": {
+        "self_preservation": false,
+        "unstuck": true,
+        "cowardice": false,
+        "self_defense": false,
+        "hunting": false,
+        "item_collecting": false,
+        "torch_placing": false,
+        "idle_staring": true,
+        "cheat": true
+    }
+}
