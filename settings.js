@@ -1,6 +1,6 @@
 export default 
 {
-    "minecraft_version": "1.20.4", // supports up to 1.21.1
+    "minecraft_version": "1.21", // supports up to 1.21.1
     "host": "127.0.0.1", // or "localhost", "your.ip.address.here"
     "port": 6666,
     "auth": "offline", // or "microsoft"
@@ -11,7 +11,8 @@ export default
     "mindserver_port": 8080,
     
     "profiles": [
-        "./andy.json",
+        "./custom_profiles/blue.json",
+        "./custom_profiles/red.json",
         // "./profiles/gpt.json",
         // "./profiles/claude.json",
         // "./profiles/gemini.json",
