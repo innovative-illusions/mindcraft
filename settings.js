@@ -1,8 +1,8 @@
 export default 
 {
-    "minecraft_version": "1.21", // supports up to 1.21.1
+    "minecraft_version": "1.20.4", // supports up to 1.21.1
     "host": "127.0.0.1", // or "localhost", "your.ip.address.here"
-    "port": 6666,
+    "port": 55555,
     "auth": "offline", // or "microsoft"
 
     // the mindserver manages all agents and hosts the UI
@@ -11,10 +11,12 @@ export default
     "mindserver_port": 8080,
     
         "profiles": [
+            "./extras/green.json",
+            "./extras/red.json",
         // "./andy-creative.json",
-        "./custom_profiles/green.json",
+        // "./custom_profiles/green.json",
         // "./custom_profiles/red.json",
-        //"./profiles/andy_npc.json",
+        // "./profiles/andy_npc.json",
         // "./profiles/claude.json",
         // "./profiles/gemini.json",
         // "./profiles/llama.json",
