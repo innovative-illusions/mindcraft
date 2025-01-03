@@ -11,12 +11,12 @@ export default
     "mindserver_port": 8080,
     
         "profiles": [
-            "./extras/green.json",
-            "./extras/red.json",
+        // "./profiles/extras/green.json",
+        // "./extras/red.json",
         // "./andy-creative.json",
         // "./custom_profiles/green.json",
         // "./custom_profiles/red.json",
-        // "./profiles/andy_npc.json",
+        "./profiles/andy_vis.json",
         // "./profiles/claude.json",
         // "./profiles/gemini.json",
         // "./profiles/llama.json",
@@ -35,7 +35,7 @@ export default
     "allow_insecure_coding": true, // allows newAction command and model can write/run code on your computer. enable at own risk
     "code_timeout_mins": 10, // minutes code is allowed to run. -1 for no timeout
 
-    "max_messages": 25, // max number of messages to keep in context
+    "max_messages": 50, // max number of messages to keep in context
     "max_commands": -1, // max number of commands to use in a response. -1 for no limit
     "verbose_commands": true, // show full command syntax
     "narrate_behavior": true, // chat simple automatic actions ('Picking up item!')

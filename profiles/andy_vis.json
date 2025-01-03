@@ -1,9 +1,9 @@
 {
-    "name": "ANDY25",
+    "name": "ANDY-VIS",
     "model": {
         "api": "openai",
-        "url": "http://localhost:4000/",
-        "model": "GLHF:llama3.2-90b"
+        "url": "http://192.168.1.151:1234/v1",
+        "model": "TOGETHER:llama3.2-vision"
     },
     "embedding": {
         "api": "ollama",
